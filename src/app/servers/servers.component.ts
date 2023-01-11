@@ -9,4 +9,12 @@ import { Component } from '@angular/core';
 })
 export class ServersComponent {
 
+  allDisabkedServer: boolean = false;
+
+  constructor(){
+    setTimeout(() => {
+      this.allDisabkedServer= true
+      
+    }, 2000);
+  }
 }
